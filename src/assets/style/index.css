@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap");
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background: #233142;
+}
+#navigation img {
+  height: 150px;
+}
+#navigation ul {
+  display: flex;
+}
+#navigation ul a {
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s;
+}
+#navigation ul a:hover {
+  color: #f95959;
+}
+
+#footer {
+  bottom: 0;
+  background-color: #233142;
+  color: #f95959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2 {
+  margin: 80px 0 130px;
+}
+.contact #contact_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+.contact #contact_content #contact_infos {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.contact #contact_content #contact_infos li {
+  margin: 20px 0;
+}
+.contact #contact_content #contact_form {
+  width: 33%;
+}
+.contact #contact_content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact #contact_content form input, .contact #contact_content form textarea {
+  border-radius: 8px;
+  border: 1px solid #f95959;
+  padding: 10px;
+}
+.contact #contact_content form label {
+  margin: 20px 0 5px;
+}
+.contact #contact_content form #btn_submit {
+  font-size: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+}
+.contact #contact_content form #btn_submit:hover {
+  background: #f95959;
+  color: white;
+}
+
+.home h2 {
+  font-size: 40px;
+  margin-top: 100px;
+  text-align: center;
+  color: #233142;
+}
+.home h3 {
+  font-size: 25px;
+  font-weight: 200;
+}
+.home p {
+  font-family: none;
+  font-size: 15px;
+  font-weight: 700;
+  width: 75%;
+  margin: 30px auto;
+}
+.home .title_line {
+  width: 300px;
+  height: 2px;
+  margin: 10px auto 150px;
+  background-color: #f95959;
+}
+.home .home_header {
+  background-color: #233142;
+  display: flex;
+}
+.home .home_header .home_header_img {
+  width: 50%;
+  text-align: right;
+  position: relative;
+}
+.home .home_header .home_header_img img {
+  height: 450px;
+}
+.home .home_header .home_header_title {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 250px;
+}
+.home .home_header .home_header_title span {
+  color: #f95959;
+}
+.home .home_specialisations {
+  background: url(/src/assets/images/background_specialisations.png) center/cover;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #233142;
+}
+.home .home_specialisations h3 {
+  height: 60px;
+  color: #f95959;
+}
+.home .home_specialisations p {
+  font-size: 18px;
+  text-align: justify;
+  color: #233142;
+}
+.home .home_specialisations .specialations_list {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home .home_specialisations .specialations_list .specialisations_list_content {
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.home .home_specialisations .specialations_list .specialisations_list_content .img {
+  width: 50%;
+  margin: 0 auto;
+  height: 150px;
+}
+.home .home_specialisations .specialations_list .specialisations_list_content .img img {
+  max-height: 150px;
+}
+
+.home .home_services {
+  display: flex;
+  justify-content: flex-end;
+}
+.home .home_services h2 {
+  color: white;
+}
+.home .home_services .home_services_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #f95959 solid 1px;
+  background: #233142;
+  color: white;
+  border-radius: 50px 0 0 50px;
+}
+.home .home_services .home_services_content .home_services_title {
+  display: flex;
+  flex-direction: column;
+}
+.home .home_services .home_services_content .home_services_title h2 {
+  font-size: 35px;
+}
+.home .home_services .home_services_content .home_services_title p {
+  width: 50%;
+}
+.home .home_services .home_services_content .home_services_list .list_content {
+  background: #f95959;
+  border-radius: 50px 0 0 50px;
+}
+.home .home_services .home_services_content .home_services_list .list_content p {
+  font-size: 25px;
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Russo One", sans-serif;
+}
+
+#navigation {
+  height: 20vh;
+}/*# sourceMappingURL=index.css.map */
