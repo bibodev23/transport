@@ -29,7 +29,7 @@
         a {
             color: white;
             text-decoration: none;
-            transition: 0.2s;
+            transition: 0.3s;
         }
     }
     button:hover {
@@ -39,14 +39,51 @@
         }
         
     }
+
+    .nav_narrow {
+        opacity: 1;
+        display: none;
+    }
 }
 
 
 #footer {
-    bottom: 0;
+    height: 300px;
     background-color: #233142;
     color:#f95959;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:600px) {
+    body {
+        padding: 0;
+        margin: 0;
+        #navigation {
+            width: 100%;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            height: auto;
+            #logo {
+                img {
+                    height: 100px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .navigation_links {
+                margin: 20px;
+                ul {
+                    flex-direction: row;
+                }
+            }
+            
+            button {
+                display:none;
+        }
+        }
+    }
+    
 }

@@ -50,3 +50,29 @@
     }
     
 }
+
+@media (max-width:600px) {
+    .contact {
+        h2 {
+            margin: 50px 0;
+            padding: 0;
+        }
+        #contact_content {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            img {
+                height: 300px;
+                padding: 0;
+                margin: 0;
+            }
+            #contact_form {
+                width: 70%;
+                margin-bottom: 30px;
+            }
+            
+        }
+        
+    }
+    }
+    

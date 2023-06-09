@@ -89,6 +89,10 @@
     }
 }
 
+
+
+
+
 .home {
     .home_services {
         h2 {
@@ -143,6 +147,149 @@
             justify-content: space-around;
             align-items: center;
             text-align: center;
+        }
+    }
+}
+
+.home_devis {
+    margin: 0 auto;
+    .btn_devis {
+        width: 15%;
+        margin: 0 auto;
+        button {
+            padding: 20px;
+            font-size: 20px;
+            background-color: #f95959;
+            border: none;
+            border-radius: 8px;
+            margin: 100px auto;
+            a {
+                color: white;
+                text-decoration: none;
+                transition: 0.2s;
+            }
+        }
+        button:hover {
+            background-color: #233142;
+            a {
+                color: #f95959;
+            }
+            
+        }
+    }
+    
+}
+
+@media (max-width:600px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        .home_sections {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .home_header {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            background-color: transparent;
+            margin-top: 50px;
+            .home_header_img {
+                display: none;
+            }
+            .home_header_title {
+                width: 100%;
+                color:#233142;
+                position:relative;
+                top: 0;
+                left: 0;
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .home_specialisations {
+            h2 {
+                width: 100%;
+
+            }
+            .specialations_list {
+                width: 100%;
+                .specialisations_list_content {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .home_services {
+            padding: 0;
+            flex-direction: column;
+            .home_services_content {
+                width: 100%;
+                flex-direction: column;
+                padding: 0;
+                border-radius: 0;
+                .home_services_title {
+                    width: 100%;
+                    margin-top: 50px;
+                    margin:50px 0 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h2 {
+                        font-size: 25px;
+                        text-align: center;
+                        padding: 0;
+                        margin: 50px auto;
+                        width: 100%;
+                    }
+                    #service_text {
+                        width: 75%;
+                        font-size: large;
+                        padding: 0;margin: 0;
+                    }
+                }
+                .home_services_list {
+                    width: 100%;
+                    .list_content {
+                        width: 100%;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+        .home_engagements {
+            .home_engagements_list 
+        {
+            flex-direction: column;
+            p {
+                font-size: 25px;
+                width: 100%;
+                text-align: justify;
+            }
+        }
+        .engagement_cout {
+            flex-direction: column-reverse;
+            h3 {
+                margin-top: 30px;
+            }
+        }
+        }
+        .home_devis
+        {
+            .btn_devis {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }

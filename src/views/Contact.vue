@@ -3,15 +3,14 @@
         <h2>CONTACTEZ-NOUS</h2>
         <div id="contact_content">
             <div id="contact_infos">
-            <ul>
-                <li><i class=""></i><p>Masa Transport</p></li>
-                <li><i class=""></i><p>8 rue de Bretagne <br> 75000 Paris</p></li>
-                <li><i class=""></i><p>transport@gmail.com</p></li>
-            </ul>
+            <img src="../assets/images/contact.png" alt="">
             </div>
             <div id="contact_form">
                 <h3>DECRIVEZ-NOUS VOTRE DEMANDE</h3>
                 <form action="">
+                    <label for="name_company">Votre société : </label>
+                    <input type="text" name="name_company" id="name_company" placeholder="Votre société">
+                    
                     <label for="name">Entrez votre nom : </label>
                     <input type="text" name="name" id="name" placeholder="Votre nom">
 

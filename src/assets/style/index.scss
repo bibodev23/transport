@@ -13,3 +13,11 @@
 #navigation {
     height: 20vh;
 }
+
+@media (max-width) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+}
+
