@@ -1,9 +1,10 @@
+@import './mixins';
 .home {
     h2 {
         font-size: 40px;
         margin-top: 100px;
         text-align: center;
-        color: #233142;
+        color: $color2;
     }
     h3 {
         font-size: 25px;
@@ -20,10 +21,10 @@
         width: 300px;
         height: 2px;
         margin: 10px auto 150px;
-        background-color: #f95959;
+        background-color: $color1;
     }
     .home_header {
-        background-color: #233142;
+        background-color: $color2;
         display: flex;
         .home_header_img {
             width: 50%;
@@ -37,32 +38,31 @@
             width: 50%;
             margin: 0 auto;
             font-size: 25px;
-            color: white;
+            color: $color4;
             display: flex;
             align-items: center;
             position: absolute;
             left: 50%;
             top: 250px;
             span {
-                color: #f95959;
+                color: $color1;
             }
         }
     }
     .home_specialisations {
         background: url(/src/assets/images/background_specialisations.png) center/cover;
         width: 100%;
-        // border: 10px solid red;
         margin: 0 auto;
         text-align: center;
-        color: #233142;
+        color: $color2;
         h3 {
             height: 60px;
-            color: #f95959;
+            color: $color1;
         }
         p {
             font-size: 18px;
             text-align: justify;
-            color: #233142;
+            color: $color2;
         }
         .specialations_list {
             width: 60%;
@@ -96,18 +96,16 @@
 .home {
     .home_services {
         h2 {
-            color: white;
+            color: $color4;
             margin: 0;
             padding: 0;
         }
         display: flex;
         justify-content: flex-end;
         .home_services_content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #233142;
-            color: white;
+            @include flex_center;
+            background: $color2;
+            color: $color4;
             border-radius: 50px 0 0 50px;
             .home_services_title {
                 display: flex;
@@ -122,7 +120,7 @@
             .home_services_list {
                 width: 50%;
                 .list_content {
-                    background: #f95959;
+                    background: $color1;
                     border-radius: 50px 0 0 50px;
                     p {
                         font-size: 25px;
@@ -143,9 +141,8 @@
         .home_engagements_list {
             width: 70%;
             margin: 0 auto;
-            display: flex;
+            @include flex_center;
             justify-content: space-around;
-            align-items: center;
             text-align: center;
         }
     }
@@ -159,20 +156,20 @@
         button {
             padding: 20px;
             font-size: 20px;
-            background-color: #f95959;
+            background-color: $color1;
             border: none;
             border-radius: 8px;
             margin: 100px auto;
             a {
-                color: white;
+                color: $color4;
                 text-decoration: none;
                 transition: 0.2s;
             }
         }
         button:hover {
-            background-color: #233142;
+            background-color: $color2;
             a {
-                color: #f95959;
+                color: $color1;
             }
             
         }
@@ -203,7 +200,7 @@
             }
             .home_header_title {
                 width: 100%;
-                color:#233142;
+                color:$color2;
                 position:relative;
                 top: 0;
                 left: 0;
@@ -286,9 +283,7 @@
         {
             .btn_devis {
                 width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex_center;
             }
         }
     }

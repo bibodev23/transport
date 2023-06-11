@@ -125,8 +125,7 @@
                     title: "LOGISTIQUE",
                     description: "Grâce à notre expertise et nos équipement, nous sommes en mesure de vous proposer un service de logistique et de stockage de vos marchandises au sein de nos entrepôts.",
                 }
-            ]
-                
+            ],                
             };
         },
         mounted() {

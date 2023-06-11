@@ -38,3 +38,12 @@
         
       }
 }
+
+@media (max-width:600px) {
+    .services 
+    {
+        img {
+            max-width: 200px;
+        }
+    }
+}

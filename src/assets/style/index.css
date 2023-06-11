@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap");
 #navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   padding: 0 50px;
   background: #233142;
 }
@@ -46,12 +47,59 @@
 }
 
 #footer {
-  height: 300px;
   background-color: #233142;
   color: #f95959;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
+}
+#footer img {
+  height: 100px;
+}
+#footer .contact_content {
+  width: 15%;
+  text-align: center;
+  margin: 30px 0;
+}
+#footer .contact_content ul li {
+  margin: 15px 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+#footer .contact_content ul li:hover {
+  color: white;
+}
+#footer .contact_content ul a {
+  text-decoration: none;
+  color: #f95959;
+  transition: 0.3s;
+}
+#footer .contact_content ul a:hover {
+  color: white;
+}
+#footer .contact_content ul li i {
+  margin: 20px;
+  font-size: 30px;
+}
+#footer .contact_content button {
+  color: #f95959;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+#footer .contact_content button:hover {
+  background-color: #f95959;
+  color: white;
+}
+#footer .contact_logo p {
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -80,6 +128,12 @@
   body #navigation button {
     display: none;
   }
+  body #footer {
+    flex-direction: column;
+  }
+  body #footer .contact_content {
+    width: 100%;
+  }
 }
 .contact {
   display: flex;
@@ -98,7 +152,7 @@
   font-size: 20px;
 }
 .contact #contact_content #contact_infos {
-  color: rgb(0, 0, 0);
+  color: black;
   font-weight: 700;
 }
 .contact #contact_content #contact_infos li {
@@ -190,6 +244,11 @@
   margin: 30px;
 }
 
+@media (max-width: 600px) {
+  .services img {
+    max-width: 200px;
+  }
+}
 .home h2 {
   font-size: 40px;
   margin-top: 100px;
@@ -325,8 +384,9 @@
   width: 70%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   text-align: center;
 }
 

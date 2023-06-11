@@ -7,18 +7,18 @@
             </div>
             <div id="contact_form">
                 <h3>DECRIVEZ-NOUS VOTRE DEMANDE</h3>
-                <form action="">
+                <form action="https://formspree.io/f/mnqykeva" method="POST" @submit="submit_form">
                     <label for="name_company">Votre société : </label>
-                    <input type="text" name="name_company" id="name_company" placeholder="Votre société">
+                    <input type="text" v-model="company" placeholder="Votre société">
                     
                     <label for="name">Entrez votre nom : </label>
-                    <input type="text" name="name" id="name" placeholder="Votre nom">
+                    <input type="text" v-model="name" placeholder="Votre nom">
 
                     <label for="email">Entrez votre mail : </label>
-                    <input type="email" name="email" id="email" placeholder="Votre adresse email">
+                    <input type="email" v-model="email" placeholder="Votre adresse email">
 
                     <label for="message">Votre message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre demande d'informations"></textarea>
+                    <textarea v-model="message" cols="30" rows="10" placeholder="Votre demande d'informations"></textarea>
                 
                     <input id="btn_submit" type="submit" value="Envoyer">
                 </form>
@@ -29,8 +29,17 @@
 </template>
 
 <script>
+
 export default (await import('vue')).defineComponent({
-        name: "Contact",
-    })
+  name: "Contact",
+  data () {
+    return {
+        company: "",
+        name: "",
+        email:"",
+        message:"",
+    }
+  }
+});
 </script>
 

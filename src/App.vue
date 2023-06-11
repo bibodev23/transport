@@ -1,6 +1,6 @@
 <template>
   <Menu_Navigation/>
-  <router-view id="page"></router-view>
+  <router-view></router-view>
   <Pied_de_page />
 </template>
 
